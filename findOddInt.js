@@ -13,12 +13,23 @@ Examples
 
 function findOdd(A) {
   // Counter to keep track of number of times an integer appears.
+  let count = 0;
   // Loop thorugh array.
-  // If subsequent integer === previous integer, +1 to counter.
-  // If counter % 2 !== 0, then return the integer.
+  for (let i = 0; i < A.length; i++) {
+    for (let j = 0; j < A.length; j++) {
+     // If subsequent integer === previous integer, +1 to counter.
+      if (A[i] === A[j]) {
+        count ++;
+      }
+    }
+    // If counter % 2 !== 0, then return the integer.
+    if (count % 2 !== 0) {
+      return A[i];
+    }
+  }
+};
 
-}
 
-
-findOdd([7])
-findOdd([1,1,2])
+findOdd([7]);
+findOdd([1,1,2]);
+findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]);
