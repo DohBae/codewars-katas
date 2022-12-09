@@ -1,5 +1,9 @@
-# Codewars Katas
-Repo containing completed codewars katas.
+<p align="center">
+  <img src="https://w7.pngwing.com/pngs/477/603/png-transparent-codewars-button-icon-thumbnail.png">
+</p> </br>
+
+## Overview
+Repo containing completed codewars katas. </br>
 Solutions are organized based on kata level.
 
 ## [Kata Levels](https://docs.codewars.com/curation/references/kata-ranks/)
