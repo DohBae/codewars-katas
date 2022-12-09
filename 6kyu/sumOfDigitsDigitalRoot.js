@@ -14,11 +14,11 @@ function digitalRoot(n) {
   // If n is less than 10, return it.
   if (n < 10) {
     return n;
-  }
+  };
   
   // If n is greater than 10, convert n to a string. Add the digits together.
   const sum = String(n).split("").reduce((total, digit) => total + +digit, 0);
-  return digitalRoot(sum)
-}
+  return digitalRoot(sum);
+};
 
 digitalRoot(11)
