@@ -13,7 +13,7 @@ Solutions are organized based on kata level.
 [8 Kyu - Beginner](https://github.com/DohBae/codewars-katas/tree/main/8kyu) </br>
 [7 Kyu - Beginner](https://github.com/DohBae/codewars-katas/tree/main/7kyu) </br>
 [6 Kyu - Novice](https://github.com/DohBae/codewars-katas/tree/main/6kyu) </br>
-5 Kyu - Novice </br>
+[5 Kyu - Novice](https://github.com/DohBae/codewars-katas/tree/main/5kyu) </br>
 4 Kyu - Competent </br>
 3 Kyu - Competent </br>
 2 Kyu - Proficient </br>
