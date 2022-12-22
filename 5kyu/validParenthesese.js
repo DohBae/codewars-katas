@@ -12,14 +12,32 @@ Constraints
 */
 
 function validParentheses(parens) {
-  // Loop through string.
-  // Each ( needs to have an accompanying ) => (<- needs to come before ->)
-  // If there is ( and ), return true, else, return false.
-  return false;
+  let parenCount = 0;
+
+  for (let i = 0; i < parens.length && parenCount >= 0; i++) {
+    parenCount += (parens[i] == '(') ? 1 : -1;
+  }
+  return (parenCount == 0);
 }
+
+/*
+Less simplified solution not using ternary operator
+
+function validParentheses(parens){
+  var n = 0;
+  for (var i = 0; i < parens.length; i++) {
+    if (parens[i] == '(') n++;
+    if (parens[i] == ')') n--;
+    if (n < 0) return false;
+  }
+  
+  return n == 0;
+}
+*/
 
 
 validParentheses("()"); //True
 validParentheses("(())((()())())"); //True
 validParentheses(")(()))"); //False
-validParentheses("(())((()())())"); //False
+validParentheses("("); //False
+validParentheses(""); //True
