@@ -17,7 +17,6 @@ function likes(names) {
   // If there's 2 strings, return "string1 and string2 like this".
   // If there's 3 strings, return "string1, string2 and string 3 like this".
   // If there's 4 strings, return "string1, string2 and numberOfStringsLeft like this"
-
   if (names.length === 0) {
     // console.log("no one likes this");
     return "no one likes this";
@@ -35,17 +34,18 @@ function likes(names) {
     const thirdName = names.shift()
     // console.log(`${firstName}, ${secondName} and ${thirdName} like this`)
     return `${firstName}, ${secondName} and ${thirdName} like this`;
-  } else if (names.length <= 4) {
+  } else if (names.length >= 4) {
     const firstName = names.shift()
     const secondName = names.shift()
     const numbOfOthers = names.length
-    // console.log(`${firstName}, ${secondName} and ${numbOfOthers} others like this`)
+    console.log(`${firstName}, ${secondName} and ${numbOfOthers} others like this`)
     return `${firstName}, ${secondName} and ${numbOfOthers} others like this`;
   }
 };
 
-likes([])
-likes(["Peter"])
-likes(["Jacob", "Alex"])
-likes(["Max", "John", "Mark"])
-likes(["Alex", "Jacob", "Mark", "Max"])
+// likes([])
+// likes(["Peter"])
+// likes(["Jacob", "Alex"])
+// likes(["Max", "John", "Mark"])
+// likes(["Alex", "Jacob", "Mark", "Max"])
+likes(["54fDGsdfs", "90099skldfjklajflks", "klajfdkljadlkaj f", "aijfsdjfasljf", "aijfsdjfasljf", "aijfsdjfasljf", "aijfsdjfasljf", "aijfsdjfasljf", "aijfsdjfasljf", "aijfsdjfasljf", "aijfsdjfasljf"])
