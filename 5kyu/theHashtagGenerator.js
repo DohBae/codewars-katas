@@ -19,9 +19,7 @@ function generateHashtag(str) {
   // Remove spaces between words
   const newStr = str.replace(/\s/g, '')
 
-  console.log(str.length)
   if (newStr.length >= 140) {
-    console.log(false)
     return false;
   };
 
