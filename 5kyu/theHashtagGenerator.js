@@ -19,7 +19,9 @@ function generateHashtag(str) {
   // Remove spaces between words
   const newStr = str.replace(/\s/g, '')
 
-  if (newStr.length > 140) {
+  console.log(str.length)
+  if (newStr.length >= 140) {
+    console.log(false)
     return false;
   };
 
@@ -32,9 +34,9 @@ function generateHashtag(str) {
   return `#${capitalizeChars}`;
 };
 
-generateHashtag("") //false
-generateHashtag(" ") //false
-generateHashtag("Hello world") //#HelloWorld
-generateHashtag("You Were My Brother Anakin") //#YouWereMyBrotherAnakin
-generateHashtag("you were    my brother anakin") //#YouWereMyBrotherAnakin
+// generateHashtag("") //false
+// generateHashtag(" ") //false
+// generateHashtag("Hello world") //#HelloWorld
+// generateHashtag("You Were My Brother Anakin") //#YouWereMyBrotherAnakin
+// generateHashtag("you were    my brother anakin") //#YouWereMyBrotherAnakin
 generateHashtag("Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'") //false
