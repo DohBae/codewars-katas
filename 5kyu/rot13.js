@@ -34,16 +34,9 @@ z= m
 */
 
 function rot13(message) {
-  //Look at first letter in string
-  // From that letter, count to 13 
-  // Add 13th letter to new string
-  // Create an array of letters to iterate through when counting to 13
-
   const alphabet = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM'
 
-  const cipher = message.replace(/[a-zA-Z]/g, letter => alphabet[alphabet.indexOf(letter) + 13])
-
-  return cipher
+  return cipher = message.replace(/[a-zA-Z]/g, letter => alphabet[alphabet.indexOf(letter) + 13])
 }
 
 rot13("test") //grfg
