@@ -17,15 +17,10 @@ function domainName(url){
   // console.log(noHttp)
   // const noHttps = url.replace(/(?:https:\/\/)/, '')
   // console.log(noHttps)
-  // const domName = url.replace(/(?:w{1,3}\.)/, '').replace(/(?:http:\/\/)/, '').replace(/(?:https:\/\/)/, '').replace(/\..*$/, '')
-  // console.log(domName)
-  // return domName[0]
+  const domName = url.replace(/(?:w{1,3}\.)/, '').replace(/(?:http:\/\/)/, '').replace(/(?:https:\/\/)/, '').split(/[/?#]/)[0]
+  console.log(domName.split([0]))
+  return domName.split([0])
 
-  let urlRegex = url.replace('http://','').replace('https://','').replace('www.','').split(/[/?#]/)[0];
-  // console.log(urlRegex)
-  	let domain = urlRegex.split(".")[0];
-    // console.log(domain)
-  	return domain;
 }
 
 domainName("http://www.google.com") //google
